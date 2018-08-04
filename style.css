@@ -1,0 +1,46 @@
+body {
+  border-collapse: collapse;
+  position: absolute;
+  left: 52.5%;
+  margin-left: -150px;
+  background-image: url("https://orig00.deviantart.net/3f8e/f/2010/139/e/5/dc_vs_marvel_by_kane52630.png");
+  background-size: cover;
+}
+
+.border {
+  height: 350px;
+  width: 350px;
+}
+
+.table {
+  margin: 15px;
+}
+
+.cell {
+  border-style: solid;
+  text-align: center;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.gameStatus {
+  width: 343px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  border-style: solid;
+  text-align: center;
+}
+
+.text {
+  margin: 10px;
+}
+
+.buttonStyle {
+  margin-left: 30px;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #4caf50;
+  padding: 10px 15px;
+}
