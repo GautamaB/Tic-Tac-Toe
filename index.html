@@ -11,24 +11,24 @@
 
 <body>
   <h1>Who is the Best ?
-    <button onClick="startGame" class="buttonStyle">Replay</button>
+    <button onClick="replay" class="buttonStyle">Replay</button>
   </h1>
 
   <table class="border">
     <tr>
-      <td class="cell" id="0">x</td>
-      <td class="cell" id="1">o</td>
-      <td class="cell" id="2">x</td>
+      <td class="cell" id="0" onClick="move(this)"></td>
+      <td class="cell" id="1" onClick="move(this)"></td>
+      <td class="cell" id="2" onClick="move(this)"></td>
     </tr>
     <tr>
-      <td class="cell" id="3">o</td>
-      <td class="cell" id="4">x</td>
-      <td class="cell" id="5">o</td>
+      <td class="cell" id="3" onClick="move(this)"></td>
+      <td class="cell" id="4" onClick="move(this)"></td>
+      <td class="cell" id="5" onClick="move(this)"></td>
     </tr>
     <tr>
-      <td class="cell" id="6">x</td>
-      <td class="cell" id="7">o</td>
-      <td class="cell" id="8">x</td>
+      <td class="cell" id="6" onClick="move(this)"></td>
+      <td class="cell" id="7" onClick="move(this)"></td>
+      <td class="cell" id="8" onClick="move(this)"></td>
     </tr>
   </table>
   <div class="gameStatus">
