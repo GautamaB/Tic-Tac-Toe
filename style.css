@@ -10,6 +10,16 @@ h1 {
   font-family: "Aref Ruqaa", serif;
 }
 
+.buttonStyle {
+  font-family: "Aref Ruqaa", serif;
+  margin-left: 55px;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #4caf50;
+  padding: 10px 15px;
+}
+
 .border {
   height: 350px;
   width: 350px;
@@ -29,26 +39,13 @@ h1 {
   cursor: pointer;
 }
 
-.gameStatus {
+#gameStatus {
+  font-family: "Aref Ruqaa", serif;
   width: 343px;
+  height: 35px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 15px;
   border-style: solid;
   text-align: center;
-}
-
-.text {
-  margin: 10px;
-  font-family: "Aref Ruqaa", serif;
-}
-
-.buttonStyle {
-  font-family: "Aref Ruqaa", serif;
-  margin-left: 55px;
-  color: white;
-  border-radius: 15px;
-  cursor: pointer;
-  background-color: #4caf50;
-  padding: 10px 15px;
 }
