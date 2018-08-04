@@ -10,8 +10,9 @@ h1 {
   font-family: "Aref Ruqaa", serif;
 }
 
-.buttonStyle {
+#replayStyle {
   font-family: "Aref Ruqaa", serif;
+  font-size: 15px;
   margin-left: 55px;
   color: white;
   border-radius: 15px;

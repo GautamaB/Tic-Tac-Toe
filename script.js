@@ -1,6 +1,10 @@
 function startGame() {
-  document.turn = "X";
-  setMessage("The game beging, " + document.turn + " started the first.");
+  for (var i = 0; i <= 8; i++) {
+    clearCell(i);
+    document.turn = "X";
+    document.winner = null;
+    setMessage("The game beging, " + document.turn + " started the first.");
+  }
 }
 
 function setMessage(msg) {
@@ -8,7 +12,9 @@ function setMessage(msg) {
 }
 
 function move(cell) {
-  if (cell.innerText == "") {
+  if (document.winner != null) {
+    setMessage(document.turn + " has already win!");
+  } else if (cell.innerText == "") {
     cell.innerHTML = document.turn;
     turnDirection();
   } else {
@@ -16,9 +22,12 @@ function move(cell) {
   }
 }
 
+
+
 function turnDirection() {
   if (winCombos(document.turn)) {
     setMessage("The player " + document.turn + " has Win!!");
+    document.winner = document.turn;
   } else if (document.turn == "X") {
     document.turn = "O";
     setMessage("It's " + document.turn + "'s trun.");
@@ -55,6 +64,10 @@ function checkRow(a, b, c, move) {
 
 function getCell(number) {
   return document.getElementById("s" + number).innerText;
+}
+
+function clearCell(number) {
+  return (document.getElementById("s" + number).innerText = "");
 }
 
 startGame();
