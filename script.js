@@ -1,10 +1,10 @@
 function startGame() {
   for (var i = 0; i <= 8; i++) {
     clearCell(i);
-    document.turn = "X";
-    document.winner = null;
-    setMessage("The game beging, " + document.turn + " started the first.");
   }
+  document.turn = "X";
+  document.winner = null;
+  setMessage("The game beging, " + document.turn + " started the first.");
 }
 
 function setMessage(msg) {
@@ -22,12 +22,19 @@ function move(cell) {
   }
 }
 
-
+function CheckforTie() {
+  for (var i = 1; i < 9; i++) {
+    if (getCell(i) == "") return false;
+  }
+  return true;
+}
 
 function turnDirection() {
   if (winCombos(document.turn)) {
     setMessage("The player " + document.turn + " has Win!!");
     document.winner = document.turn;
+  } else if (CheckforTie()) {
+    setMessage("Equality !! Play again.");
   } else if (document.turn == "X") {
     document.turn = "O";
     setMessage("It's " + document.turn + "'s trun.");
@@ -67,7 +74,7 @@ function getCell(number) {
 }
 
 function clearCell(number) {
-  return (document.getElementById("s" + number).innerText = "");
+  document.getElementById("s" + number).innerText = "";
 }
 
 startGame();
