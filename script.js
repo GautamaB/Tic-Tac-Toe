@@ -36,7 +36,7 @@ const turnDirection = () => {
   } else if (CheckforTie()) {
     setMessage("Equality !! Play again.");
   } else if (document.turn == "DC") {
-    document.turn = "Marvel";
+    document.turn = "MARVEL";
     setMessage("It's " + document.turn + "'s trun.");
   } else {
     document.turn = "DC";
