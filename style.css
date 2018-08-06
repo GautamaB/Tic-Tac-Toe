@@ -19,6 +19,7 @@ h1 {
   cursor: pointer;
   background-color: #4caf50;
   padding: 10px 15px;
+  text-decoration: none;
 }
 
 .border {

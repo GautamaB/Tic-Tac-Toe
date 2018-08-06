@@ -4,7 +4,7 @@ const startGame = () => {
   }
   document.turn = "DC";
   document.winner = null;
-  setMessage("The game beging, " + document.turn + " started the first.");
+  setMessage("The game begins, the team " + document.turn + " starts.");
 };
 
 const setMessage = msg => {
@@ -13,7 +13,7 @@ const setMessage = msg => {
 
 const move = cell => {
   if (document.winner != null) {
-    setMessage(document.turn + " has already win!");
+    setMessage("The team " + document.turn + " has already won. Replay!");
   } else if (cell.innerText == "") {
     cell.innerHTML = document.turn;
     turnDirection();
@@ -31,16 +31,16 @@ const CheckforTie = () => {
 
 const turnDirection = () => {
   if (winCombos(document.turn)) {
-    setMessage("The player " + document.turn + " has Win!!");
+    setMessage("The team " + document.turn + " has Won!!");
     document.winner = document.turn;
   } else if (CheckforTie()) {
     setMessage("Equality !! Play again.");
   } else if (document.turn == "DC") {
     document.turn = "MARVEL";
-    setMessage("It's " + document.turn + "'s trun.");
+    setMessage("It's a turn of the team " + document.turn + ".");
   } else {
     document.turn = "DC";
-    setMessage("It's " + document.turn + "'s trun.");
+    setMessage("It's a turn of the team " + document.turn + ".");
   }
 };
 
