@@ -19,7 +19,7 @@ In your terminal :
 
 5.  If you want to see the projet in your browser : double clic on the file index.html in the folder Tic-Tac-Toe.
 
-6.  For add and modify the code create a new branch: `git checkout -b <branchName>`
+6.  For add and modify the code create a new branch : `git checkout -b <branchName>`
 
 7.  for updates the remote refs using local refs : `git push origin <branchName>`
 
